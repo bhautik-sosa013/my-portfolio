@@ -24,3 +24,12 @@ dist-ssr
 *.sw?
 
 .env
+
+# Added by Buildr github-import: never commit env values
+.env.local
+.env.*.local
+
+# Added by projectcode.dev
+build
+.next
+.vite
