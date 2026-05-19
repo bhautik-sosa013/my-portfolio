@@ -1,4 +1,4 @@
-# Dainy Jose | Portfolio
+# Noob | Portfolio
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## About
 
-Hi! I’m **Dainy Jose**, a **Hybrid App & Full-Stack Developer** specialized in **React Native, React, and MERN Stack**.  
+Hi! I’m **Noob**, a **Hybrid App & Full-Stack Developer** specialized in **React Native, React, and MERN Stack**.  
 This portfolio showcases my **projects, POCs, blogs, skills, and contact info** in a modern and interactive interface.
 
 ---
@@ -102,7 +102,7 @@ bun run deploy
 
 ## 🧑‍💻 Author
 
-**Dainy Jose**  
+**Noob**  
 [GitHub](https://github.com/dainyjose) | [LinkedIn](https://linkedin.com/in/dainyjose)
 
 ---

@@ -1,4 +1,4 @@
-import SwiperCore, { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,7 +10,6 @@ import "swiper/css/scrollbar";
 import "./Blogs.css";
 
 const Blogs = () => {
-  SwiperCore.use([Pagination, Autoplay]);
 
   const blogs = [
     {
@@ -116,7 +115,7 @@ const Blogs = () => {
       <h2>Blogs</h2>
       <Swiper
         className="container blogs__container"
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}

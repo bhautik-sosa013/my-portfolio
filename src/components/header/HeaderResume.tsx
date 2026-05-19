@@ -1,6 +1,4 @@
-import CV from "../../assets/Dainy_Jose_Resume.pdf";
-import { ImDownload } from "react-icons/im";
-import { TbEye, TbFileCv, TbMessageChatbot } from "react-icons/tb";
+import { TbFileCv, TbMessageChatbot } from "react-icons/tb";
 
 const HeaderResume = () => {
   return (

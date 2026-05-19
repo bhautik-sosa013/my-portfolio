@@ -1,0 +1,4 @@
+{
+  "success": true,
+  "result": "Three changes made:\n\n1. **`src/components/Blogs/Blogs.tsx`** — Removed the `SwiperCore` import and `SwiperCore.use([...])` call (deprecated pattern). Added `Autoplay` to the `modules` prop alongside `Pagination` so both modules are properly registered.\n\n2. **`src/swiper.d.ts`** — Added `Pagination` and `Autoplay` exports to the `swiper` module declaration so TypeScript recognizes them."
+}

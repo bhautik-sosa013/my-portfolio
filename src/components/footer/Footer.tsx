@@ -14,7 +14,7 @@ const Footer = () => {
         href="#home"
         className="footer__logo"
       >
-        Dainy Jose
+        Noob
       </a>
       <ul className="permalinks">
         <li>
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
       <div className="footer__copyright">
         <small>
-          &copy; {getYear()}. Designed & Developed with ❤️ by <b>Dainy Jose</b>
+          &copy; {getYear()}. ROJUBHOI
         </small>
       </div>
     </footer>

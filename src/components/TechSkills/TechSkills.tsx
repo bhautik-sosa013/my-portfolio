@@ -10,13 +10,9 @@ import {
   SiRedux,
   SiExpress,
   SiMysql,
-  SiPython,
   SiFirebase,
   SiCloudinary,
   SiExpo,
-  SiVite,
-  SiHtml5,
-  SiCss3,
   SiPostman,
   SiBitbucket,
   SiFigma,
@@ -25,14 +21,11 @@ import {
   SiCloudflare,
   SiCpanel,
   SiJest,
-  SiDocker,
   SiMacos,
   SiJira,
-  SiXampp,
   SiAndroidstudio,
   SiXcode,
   SiNpm,
-  SiBun,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import {
