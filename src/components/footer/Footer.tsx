@@ -14,7 +14,7 @@ const Footer = () => {
         href="#home"
         className="footer__logo"
       >
-        Noob
+        TOOO
       </a>
       <ul className="permalinks">
         <li>
