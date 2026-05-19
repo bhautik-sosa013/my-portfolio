@@ -1,4 +1,4 @@
-import ME from "../../assets/dainy_jose.jpg";
+import ME from "../../assets/batman.jpg";
 import { FaAward } from "react-icons/fa";
 import { TbMessageChatbot } from "react-icons/tb";
 import { MdOutlineMilitaryTech } from "react-icons/md";
