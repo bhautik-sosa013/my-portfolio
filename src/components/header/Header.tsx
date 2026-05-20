@@ -8,9 +8,7 @@ const Header = () => {
     <header id="home">
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>
-          Batman by <span className="header__bruce-wayne">Bruce Wayne</span>
-        </h1>
+        <h1 className="header__bruce-wayne">Bruce Wayne</h1>
         <h3 className="text-light">
           React Native Mobile App Developer | Full-Stack (MERN)
         </h3>

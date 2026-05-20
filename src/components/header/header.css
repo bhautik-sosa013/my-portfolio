@@ -11,26 +11,72 @@ header {
 }
 
 .header__bruce-wayne {
+  position: relative;
+  display: inline-block;
+  margin: 0.6rem auto 0.4rem;
+  padding: 0 0.4rem 0.8rem;
   font-family: "Cinzel", "Trajan Pro", "Georgia", serif;
-  font-weight: 700;
-  letter-spacing: 0.15rem;
-  background: linear-gradient(180deg, #f5d76e 0%, #d4af37 45%, #8b6914 100%);
+  font-weight: 600;
+  font-size: 4.2rem;
+  letter-spacing: 0.55rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #fff6d5 0%,
+    #f5d76e 28%,
+    #d4af37 55%,
+    #7a5a14 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow:
-    0 0 8px rgba(255, 200, 60, 0.45),
-    0 0 22px rgba(255, 170, 30, 0.35),
-    0 0 40px rgba(0, 0, 0, 0.85);
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9));
-  transition: filter 0.4s ease, letter-spacing 0.4s ease;
+    0 0 12px rgba(255, 200, 60, 0.35),
+    0 0 28px rgba(0, 0, 0, 0.9);
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.95));
+  transition: letter-spacing 0.5s ease, filter 0.5s ease;
+}
+
+.header__bruce-wayne::before,
+.header__bruce-wayne::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.85) 50%,
+    transparent 100%
+  );
+  transform: translateX(-50%);
+}
+
+.header__bruce-wayne::before {
+  top: -0.6rem;
+  width: 55%;
+}
+
+.header__bruce-wayne::after {
+  bottom: 0;
+  width: 80%;
 }
 
 .header__bruce-wayne:hover {
-  letter-spacing: 0.22rem;
+  letter-spacing: 0.7rem;
   filter:
-    drop-shadow(0 0 10px rgba(255, 200, 60, 0.55))
-    drop-shadow(0 2px 8px rgba(0, 0, 0, 0.95));
+    drop-shadow(0 0 14px rgba(255, 200, 60, 0.55))
+    drop-shadow(0 3px 12px rgba(0, 0, 0, 0.95));
+}
+
+@media screen and (max-width: 600px) {
+  .header__bruce-wayne {
+    font-size: 2.6rem;
+    letter-spacing: 0.35rem;
+  }
+  .header__bruce-wayne:hover {
+    letter-spacing: 0.45rem;
+  }
 }
 
 .header_resume {
