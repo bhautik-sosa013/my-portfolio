@@ -57,6 +57,17 @@ footer a {
   color: var(--color-bg);
 }
 
+.footer__built-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__bat-icon {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 600px) {
   .permalinks {
     display: flex;

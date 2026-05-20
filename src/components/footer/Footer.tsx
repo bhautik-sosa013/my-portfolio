@@ -1,5 +1,6 @@
 import { BsLinkedin } from "react-icons/bs";
 import { FaDev, FaGithub } from "react-icons/fa";
+import { GiBatwingEmblem } from "react-icons/gi";
 import "./footer.css";
 
 const Footer = () => {
@@ -66,8 +67,9 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>
-          &copy; {getYear()}. ROJUBHOI
+        <small className="footer__built-by">
+          &copy; {getYear()}. Built by Batman
+          <GiBatwingEmblem className="footer__bat-icon" aria-hidden="true" />
         </small>
       </div>
     </footer>
