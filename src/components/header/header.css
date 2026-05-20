@@ -10,6 +10,29 @@ header {
   position: relative;
 }
 
+.header__bruce-wayne {
+  font-family: "Cinzel", "Trajan Pro", "Georgia", serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  background: linear-gradient(180deg, #f5d76e 0%, #d4af37 45%, #8b6914 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 8px rgba(255, 200, 60, 0.45),
+    0 0 22px rgba(255, 170, 30, 0.35),
+    0 0 40px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9));
+  transition: filter 0.4s ease, letter-spacing 0.4s ease;
+}
+
+.header__bruce-wayne:hover {
+  letter-spacing: 0.22rem;
+  filter:
+    drop-shadow(0 0 10px rgba(255, 200, 60, 0.55))
+    drop-shadow(0 2px 8px rgba(0, 0, 0, 0.95));
+}
+
 .header_resume {
   display: flex;
   justify-content: center;
