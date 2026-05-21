@@ -52,7 +52,7 @@ const Footer = () => {
           <BsLinkedin />
         </a>
         <a
-          href="https://github.com/dainyjose"
+          href="https://github.com/bhautik-sosa013"
           target="_blank"
           rel="noreferrer"
         >
