@@ -12,7 +12,7 @@ const HeaderSocials = () => {
         <BsLinkedin />
       </a>
       <a
-        href="https://github.com/bhautik-sosa013"
+        href="https://github.com/dainyjose"
         target="_blank"
         rel="noreferrer"
       >
