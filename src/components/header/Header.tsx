@@ -10,10 +10,10 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1 className="header__bruce-wayne">I am Developer</h1>
         <h3 className="text-light">
-          React Native Mobile App Developer | Full-Stack (MERN)
+          AI Developer | Full-Stack (MERN)
         </h3>
         <h5 className="text-light header_tech_skill">
-          React Native Mobile App Developer | TypeScript | Redux | React.js |
+          AI Developer | TypeScript | Redux | React.js |
           Node.js | Express.js | MongoDB | MySQL | REST APIs | Firebase | Google
           Maps | Payments Integration | Jest | Git | Bitbucket | Jira | Agile |
           SDLC | MERN Stack
