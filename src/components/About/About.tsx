@@ -1,4 +1,4 @@
-import ME from "../../assets/batman-dark-knight.jpg";
+import ME from "../../assets/michael-jackson-moonwalk.gif";
 import { FaAward } from "react-icons/fa";
 import { TbMessageChatbot } from "react-icons/tb";
 import { MdOutlineMilitaryTech } from "react-icons/md";
@@ -92,7 +92,7 @@ const About = () => {
         </div>
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="Batman by Bruce Wayne" />
+            <img src={ME} alt="Michael Jackson doing the Moonwalk" />
           </div>
         </div>
       </div>
