@@ -1,11 +1,11 @@
 import {
-  DiReact,
   DiNodejs,
   DiMongodb,
   DiJavascript1,
   DiGit,
 } from "react-icons/di";
 import {
+  SiOpenai,
   SiTypescript,
   SiRedux,
   SiExpress,
@@ -33,14 +33,18 @@ import {
   FaApple,
   FaGooglePlay,
   FaAppStoreIos,
+  FaSitemap,
+  FaProjectDiagram,
 } from "react-icons/fa";
 import { ImWindows } from "react-icons/im";
 import "./TechSkills.css";
 
 const TechSkills = () => {
   const techStack = [
-    // 🔹 Mobile Development (Highest Priority)
-    { icon: <DiReact />, name: "React Native" },
+    // 🔹 Core Skills
+    { icon: <SiOpenai />, name: "AI" },
+    { icon: <FaSitemap />, name: "Architecture" },
+    { icon: <FaProjectDiagram />, name: "System Design" },
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <SiRedux />, name: "Redux" },
