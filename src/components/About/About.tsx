@@ -48,7 +48,7 @@ const About = () => {
             <p>
               I’m a passionate{" "}
               <span className="highlight">
-                React Native Mobile Application Developer
+                AI Engineer
               </span>{" "}
               with <span className="highlight">3+ years of experience</span>{" "}
               building scalable cross-platform mobile applications.
