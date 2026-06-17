@@ -1,33 +1,31 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { MdOutlineEmail } from "react-icons/md";
 import { BiMailSend } from "react-icons/bi";
+import { api } from "../../lib/api";
 import "./contact.css";
 
 const Contact = () => {
   const [messageStatus, setMessageStatus] = useState("");
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const formData = new FormData(formRef.current!);
-    formData.append("time", new Date().toLocaleString());
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const payload = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      message: formData.get("message") as string,
+      time: new Date().toLocaleString(),
+    };
 
-    emailjs.sendForm(serviceId, templateId, formRef.current!, publicKey).then(
-      () => {
-        // console.log("Email sent:", result.text);
-        setMessageStatus("success");
-        formRef.current!.reset();
-      },
-      () => {
-        // console.log("Email error:", error.text);
-        setMessageStatus("error");
-      }
-    );
+    try {
+      await api.post("/contact", payload);
+      setMessageStatus("success");
+      formRef.current!.reset();
+    } catch {
+      setMessageStatus("error");
+    }
   };
 
   return (
