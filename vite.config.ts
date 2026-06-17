@@ -6,7 +6,7 @@ import react from "@vitejs/plugin-react";
 const isGithubPages = process.env.GITHUB_PAGES === "true";
 
 export default defineConfig({
-  server: { host: '::', port: 8080 },
+  server: { host: '::', port: 8000 },
   plugins: [react()],
   base: isGithubPages ? "/my-portfolio/" : "/",
 });
